@@ -27,7 +27,6 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " Note: You don't set neobundle setting in .gvimrc!
 NeoBundle 'fatih/vim-go'
 NeoBundle 'Chiel92/vim-autoformat'
-NeoBundle 'majutsushi/tagbar'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'Shougo/neocomplcache.vim'
