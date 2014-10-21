@@ -1,6 +1,8 @@
 neobundle.vim
 neocomplcache.vim
+nerdtree
 syntastic
+tabular
 vim-airline
 vim-autoformat
 vim-go

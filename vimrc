@@ -30,6 +30,8 @@ NeoBundle 'Chiel92/vim-autoformat'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'Shougo/neocomplcache.vim'
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'godlygeek/tabular'
 
 call neobundle#end()
 
