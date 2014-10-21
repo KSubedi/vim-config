@@ -1,0 +1,6 @@
+neobundle.vim
+syntastic
+tagbar
+vim-airline
+vim-autoformat
+vim-go
