@@ -1,4 +1,5 @@
 neobundle.vim
+neocomplcache.vim
 syntastic
 tagbar
 vim-airline

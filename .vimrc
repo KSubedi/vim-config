@@ -30,6 +30,7 @@ NeoBundle 'Chiel92/vim-autoformat'
 NeoBundle 'majutsushi/tagbar'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'bling/vim-airline'
+NeoBundle 'Shougo/neocomplcache.vim'
 
 call neobundle#end()
 
@@ -60,3 +61,6 @@ let g:airline_detect_iminsert=0
 let g:molokai_original = 1
 let g:rehash256 = 1
 
+"AutoComplete"
+
+let g:neocomplcache_enable_at_startup = 1
