@@ -1,4 +1,5 @@
 NeoBundleLock tabular 60f25648814f0695eeb6c1040d97adca93c4e0bb
+NeoBundleLock ctrlp.vim b5d3fe66a58a13d2ff8b6391f4387608496a030f
 NeoBundleLock syntastic 77c125170aa6b8c553d58f876021b0cedd8ac820
 NeoBundleLock neobundle.vim 816d21d99a071cc86ba2ffbb4679dde3b764bed7
 NeoBundleLock vim-go 9b644da9d8f6cf4a1518e592082822c05dddfea6

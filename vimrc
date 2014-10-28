@@ -32,6 +32,7 @@ NeoBundle 'bling/vim-airline'
 NeoBundle 'Shougo/neocomplcache.vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'godlygeek/tabular'
+NeoBundle 'kien/ctrlp.vim'
 
 call neobundle#end()
 
@@ -82,3 +83,8 @@ if !exists('g:neocomplcache_force_omni_patterns')
   	let g:neocomplcache_force_omni_patterns = {}
 endif
 let g:neocomplcache_force_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
+
+" CtrlP
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
