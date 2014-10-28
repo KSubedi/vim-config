@@ -11,4 +11,5 @@ mv vim-config .vim
 cd .vim
 mkdir bundle
 cd bundle
+rm -rf .
 git clone https://github.com/Shougo/neobundle.vim
