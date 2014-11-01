@@ -87,5 +87,12 @@ let g:neocomplcache_force_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
 " CtrlP
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
-
+"let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+let g:ctrlp_match_window_bottom = 0
+let g:ctrlp_match_window_reversed = 0
+let g:ctrlp_working_path_mode = 'ra' 
+let g:ctrlp_root_markers = ['.ctrlp']
+let g:ctrlp_dotfiles = 0                                                                                                                                           
+let g:ctrlp_switch_buffer = 0
+let g:ctrlp_max_files=0
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist|git|ext|build|vendor|lib)|(\.(swp|ico|git|svn))$'
