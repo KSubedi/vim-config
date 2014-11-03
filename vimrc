@@ -30,9 +30,12 @@ NeoBundle 'Chiel92/vim-autoformat'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'Shougo/neocomplcache.vim'
-NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'Lokaltog/vim-easymotion'
+NeoBundle 'tpope/vim-surround'
+NeoBundle 'tomtom/tcomment_vim'
+NeoBundle 'mattn/emmet-vim'
 
 call neobundle#end()
 
@@ -96,3 +99,12 @@ let g:ctrlp_dotfiles = 0
 let g:ctrlp_switch_buffer = 0
 let g:ctrlp_max_files=0
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist|git|ext|build|vendor|lib)|(\.(swp|ico|git|svn))$'
+
+"Vim Autoformat
+noremap <c-q> :Autoformat<CR><CR>
+
+"Vim Easymotion
+map <Leader> <Plug>(easymotion-prefix)
+
+""Vim emmet zencoding
+let g:user_emmet_leader_key='<C-Z>'

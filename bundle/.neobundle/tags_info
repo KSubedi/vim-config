@@ -1,9 +1,12 @@
 ctrlp.vim
+emmet-vim
 neobundle.vim
 neocomplcache.vim
-nerdtree
 syntastic
 tabular
+tcomment_vim
 vim-airline
 vim-autoformat
+vim-easymotion
 vim-go
+vim-surround
