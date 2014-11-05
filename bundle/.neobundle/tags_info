@@ -6,7 +6,5 @@ syntastic
 tabular
 tcomment_vim
 vim-airline
-vim-autoformat
-vim-easymotion
+vim-css-color
 vim-go
-vim-surround

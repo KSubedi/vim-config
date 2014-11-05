@@ -3,8 +3,7 @@ syntax on
 colorscheme molokai
 :set noet ci pi sts=0 sw=4 ts=4
 
-:iabbrev </ </<C-X><C-O>
-
+"Autocomplete
 " Note: Skip initialization for vim-tiny or vim-small.
 if !1 | finish | endif
 
@@ -26,16 +25,14 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " Refer to |:NeoBundle-examples|.
 " Note: You don't set neobundle setting in .gvimrc!
 NeoBundle 'fatih/vim-go'
-NeoBundle 'Chiel92/vim-autoformat'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'kien/ctrlp.vim'
-NeoBundle 'Lokaltog/vim-easymotion'
-NeoBundle 'tpope/vim-surround'
 NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'Shougo/neocomplete.vim'
+NeoBundle 'ap/vim-css-color'
 
 call neobundle#end()
 
@@ -83,14 +80,8 @@ let g:ctrlp_switch_buffer = 0
 let g:ctrlp_max_files=0
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist|git|ext|build|vendor|lib)|(\.(swp|ico|git|svn))$'
 
-"Vim Autoformat
-noremap <c-q> :Autoformat<CR><CR>
-
-"Vim Easymotion
-map <Leader> <Plug>(easymotion-prefix)
-
 ""Vim emmet zencoding
-let g:user_emmet_leader_key='<C-Z>'
+let g:user_emmet_leader_key='<c-z>'
 
 "Autocomplete
 "Note: This option must set it in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
@@ -137,7 +128,7 @@ inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
 inoremap <expr><C-y>  neocomplete#close_popup()
 inoremap <expr><C-e>  neocomplete#cancel_popup()
 " Close popup by <Space>.
-inoremap <expr><Space> pumvisible() ? neocomplete#close_popup() : "\<Space>"
+"inoremap <expr><Space> pumvisible() ? neocomplete#close_popup() : "\<Space>"
 
 " For cursor moving in insert mode(Not recommended)
 "let g:neocomplete#enable_cursor_hold_i = 1
