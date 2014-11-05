@@ -1,7 +1,7 @@
 ctrlp.vim
 emmet-vim
 neobundle.vim
-neocomplcache.vim
+neocomplete.vim
 syntastic
 tabular
 tcomment_vim

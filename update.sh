@@ -2,7 +2,7 @@
 yum update -y
 yum install -y vim git
 apt-get update
-apt-get install -y vim git
+apt-get install -y vim-nox git
 git config --global user.name "Kaushal Subedi"
 git config --global user.email kaushal@wireshock.com
 cd ~
