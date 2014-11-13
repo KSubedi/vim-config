@@ -6,5 +6,6 @@ syntastic
 tabular
 tcomment_vim
 vim-airline
+vim-autoformat
 vim-css-color
 vim-go

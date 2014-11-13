@@ -33,6 +33,7 @@ NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'ap/vim-css-color'
+NeoBundle 'Chiel92/vim-autoformat'
 
 call neobundle#end()
 
