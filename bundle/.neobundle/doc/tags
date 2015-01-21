@@ -1,5 +1,6 @@
 'b:syntastic_<checker>_exec'	syntastic.txt	/*'b:syntastic_<checker>_exec'*
 'b:syntastic_checkers'	syntastic.txt	/*'b:syntastic_checkers'*
+'b:syntastic_mode'	syntastic.txt	/*'b:syntastic_mode'*
 'b:syntastic_skip_checks'	syntastic.txt	/*'b:syntastic_skip_checks'*
 'ctrl-p'	ctrlp.txt	/*'ctrl-p'*
 'ctrlp'	ctrlp.txt	/*'ctrlp'*
@@ -59,9 +60,11 @@
 'g:go_doc_options'	vim-go.txt	/*'g:go_doc_options'*
 'g:go_fmt_autosave'	vim-go.txt	/*'g:go_fmt_autosave'*
 'g:go_fmt_command'	vim-go.txt	/*'g:go_fmt_command'*
+'g:go_fmt_experimental'	vim-go.txt	/*'g:go_fmt_experimental'*
 'g:go_fmt_fail_silently'	vim-go.txt	/*'g:go_fmt_fail_silently'*
 'g:go_fmt_options'	vim-go.txt	/*'g:go_fmt_options'*
 'g:go_highlight_array_whitespace_error'	vim-go.txt	/*'g:go_highlight_array_whitespace_error'*
+'g:go_highlight_build_constraints'	vim-go.txt	/*'g:go_highlight_build_constraints'*
 'g:go_highlight_chan_whitespace_error'	vim-go.txt	/*'g:go_highlight_chan_whitespace_error'*
 'g:go_highlight_extra_types'	vim-go.txt	/*'g:go_highlight_extra_types'*
 'g:go_highlight_functions'	vim-go.txt	/*'g:go_highlight_functions'*
@@ -73,6 +76,7 @@
 'g:go_play_browser_command'	vim-go.txt	/*'g:go_play_browser_command'*
 'g:go_play_open_browser'	vim-go.txt	/*'g:go_play_open_browser'*
 'g:go_snippet_engine'	vim-go.txt	/*'g:go_snippet_engine'*
+'g:go_textobj_enabled'	vim-go.txt	/*'g:go_textobj_enabled'*
 'g:loaded_ctrlp'	ctrlp.txt	/*'g:loaded_ctrlp'*
 'g:syntastic_<filetype>_checkers'	syntastic.txt	/*'g:syntastic_<filetype>_checkers'*
 'syntastic_<filetype>_<checker>_<option>'	syntastic.txt	/*'syntastic_<filetype>_<checker>_<option>'*
@@ -109,6 +113,7 @@
 'syntastic_style_warning_symbol'	syntastic.txt	/*'syntastic_style_warning_symbol'*
 'syntastic_warning_symbol'	syntastic.txt	/*'syntastic_warning_symbol'*
 (go-build)	vim-go.txt	/*(go-build)*
+(go-callees)	vim-go.txt	/*(go-callees)*
 (go-coverage)	vim-go.txt	/*(go-coverage)*
 (go-def)	vim-go.txt	/*(go-def)*
 (go-def-split)	vim-go.txt	/*(go-def-split)*
@@ -154,6 +159,7 @@
 :CtrlPUndo	ctrlp.txt	/*:CtrlPUndo*
 :Errors	syntastic.txt	/*:Errors*
 :GoBuild	vim-go.txt	/*:GoBuild*
+:GoCallees	vim-go.txt	/*:GoCallees*
 :GoCoverage	vim-go.txt	/*:GoCoverage*
 :GoDef	vim-go.txt	/*:GoDef*
 :GoDeps	vim-go.txt	/*:GoDeps*
@@ -364,6 +370,7 @@ g:ctrlp_mru_files	ctrlp.txt	/*g:ctrlp_mru_files*
 g:ctrlp_open_multi	ctrlp.txt	/*g:ctrlp_open_multi*
 g:ctrlp_persistent_input	ctrlp.txt	/*g:ctrlp_persistent_input*
 g:ctrlp_regexp_search	ctrlp.txt	/*g:ctrlp_regexp_search*
+g:neobundle#cache_file	neobundle.txt	/*g:neobundle#cache_file*
 g:neobundle#default_options	neobundle.txt	/*g:neobundle#default_options*
 g:neobundle#default_site	neobundle.txt	/*g:neobundle#default_site*
 g:neobundle#enable_name_conversion	neobundle.txt	/*g:neobundle#enable_name_conversion*
@@ -401,12 +408,10 @@ g:neocomplete#enable_cursor_hold_i	neocomplete.txt	/*g:neocomplete#enable_cursor
 g:neocomplete#enable_fuzzy_completion	neocomplete.txt	/*g:neocomplete#enable_fuzzy_completion*
 g:neocomplete#enable_ignore_case	neocomplete.txt	/*g:neocomplete#enable_ignore_case*
 g:neocomplete#enable_insert_char_pre	neocomplete.txt	/*g:neocomplete#enable_insert_char_pre*
-g:neocomplete#enable_prefetch	neocomplete.txt	/*g:neocomplete#enable_prefetch*
-g:neocomplete#enable_refresh_always	neocomplete.txt	/*g:neocomplete#enable_refresh_always*
+g:neocomplete#enable_multibyte_completion	neocomplete.txt	/*g:neocomplete#enable_multibyte_completion*
 g:neocomplete#enable_smart_case	neocomplete.txt	/*g:neocomplete#enable_smart_case*
 g:neocomplete#fallback_mappings	neocomplete.txt	/*g:neocomplete#fallback_mappings*
 g:neocomplete#force_omni_input_patterns	neocomplete.txt	/*g:neocomplete#force_omni_input_patterns*
-g:neocomplete#force_overwrite_completefunc	neocomplete.txt	/*g:neocomplete#force_overwrite_completefunc*
 g:neocomplete#ignore_composite_filetypes	neocomplete.txt	/*g:neocomplete#ignore_composite_filetypes*
 g:neocomplete#ignore_source_files	neocomplete.txt	/*g:neocomplete#ignore_source_files*
 g:neocomplete#keyword_patterns	neocomplete.txt	/*g:neocomplete#keyword_patterns*
@@ -472,14 +477,19 @@ g:tcommentSyntaxMap	tcomment.txt	/*g:tcommentSyntaxMap*
 g:tcommentTextObjectInlineComment	tcomment.txt	/*g:tcommentTextObjectInlineComment*
 g:tcomment_types	tcomment.txt	/*g:tcomment_types*
 g:unite_source_neobundle_install_max_processes	neobundle.txt	/*g:unite_source_neobundle_install_max_processes*
+go-af	vim-go.txt	/*go-af*
 go-commands	vim-go.txt	/*go-commands*
 go-contents	vim-go.txt	/*go-contents*
 go-credits	vim-go.txt	/*go-credits*
+go-if	vim-go.txt	/*go-if*
 go-install	vim-go.txt	/*go-install*
 go-intro	vim-go.txt	/*go-intro*
 go-mappings	vim-go.txt	/*go-mappings*
 go-settings	vim-go.txt	/*go-settings*
+go-text-objects	vim-go.txt	/*go-text-objects*
 go-troubleshooting	vim-go.txt	/*go-troubleshooting*
+go-v_af	vim-go.txt	/*go-v_af*
+go-v_if	vim-go.txt	/*go-v_if*
 i_<Plug>TComment_<c-_><c-_>	tcomment.txt	/*i_<Plug>TComment_<c-_><c-_>*
 i_<Plug>TComment_<c-_><space>	tcomment.txt	/*i_<Plug>TComment_<c-_><space>*
 i_<Plug>TComment_<c-_>a	tcomment.txt	/*i_<Plug>TComment_<c-_>a*
@@ -504,6 +514,7 @@ neobundle#has_fresh_cache()	neobundle.txt	/*neobundle#has_fresh_cache()*
 neobundle#hooks	neobundle.txt	/*neobundle#hooks*
 neobundle#is_installed()	neobundle.txt	/*neobundle#is_installed()*
 neobundle#is_sourced()	neobundle.txt	/*neobundle#is_sourced()*
+neobundle#load_toml()	neobundle.txt	/*neobundle#load_toml()*
 neobundle#local()	neobundle.txt	/*neobundle#local()*
 neobundle#rc()	neobundle.txt	/*neobundle#rc()*
 neobundle#source()	neobundle.txt	/*neobundle#source()*
@@ -687,6 +698,7 @@ syntastic-notes	syntastic.txt	/*syntastic-notes*
 syntastic-powershell	syntastic.txt	/*syntastic-powershell*
 syntastic-pymode	syntastic.txt	/*syntastic-pymode*
 syntastic-quickstart	syntastic.txt	/*syntastic-quickstart*
+syntastic-recommended	syntastic.txt	/*syntastic-recommended*
 syntastic-statusline-flag	syntastic.txt	/*syntastic-statusline-flag*
 syntastic-vim-auto-save	syntastic.txt	/*syntastic-vim-auto-save*
 syntastic-vim-virtualenv	syntastic.txt	/*syntastic-vim-virtualenv*
