@@ -34,7 +34,7 @@ NeoBundle 'mattn/emmet-vim'
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'ap/vim-css-color'
 NeoBundle 'Chiel92/vim-autoformat'
-NeoBundle 'moll/vim-node'
+NeoBundle 'ahayman/vim-nodejs-complete'
 
 call neobundle#end()
 

@@ -9,4 +9,4 @@ NeoBundleLock vim-airline 13ee9f456ac1a7d9e427874c7a6981c2461a6c4d
 NeoBundleLock vim-autoformat b25b08fd5f1ac067d43192426b55cebe91ad109a
 NeoBundleLock vim-css-color e44b2b983b39e63a92660385791c5fe8e3dedb5d
 NeoBundleLock vim-go f3b757d4150cbe018a8a02ef1c484f161dde9686
-NeoBundleLock vim-node 07a5e9f914dda778cdcefde3274d0f2ee5a75961
+NeoBundleLock vim-nodejs-complete 04ce9b6cba45fc8b847ef53a0c014d1f0d371ee8
