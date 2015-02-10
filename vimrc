@@ -35,6 +35,8 @@ NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'ap/vim-css-color'
 NeoBundle 'Chiel92/vim-autoformat'
 NeoBundle 'ahayman/vim-nodejs-complete'
+NeoBundle 'digitaltoad/vim-jade'
+NeoBundle 'scrooloose/nerdtree'
 
 call neobundle#end()
 
