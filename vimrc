@@ -1,7 +1,9 @@
 set nu
 syntax on
-colorscheme molokai
-:set noet ci pi sts=0 sw=4 ts=4
+set background=dark
+colorscheme solarized 
+let g:solarized_termcolors=256
+set noet ci pi sts=0 sw=4 ts=4
 
 "Autocomplete
 " Note: Skip initialization for vim-tiny or vim-small.
@@ -54,7 +56,7 @@ set noshowmode
 set t_Co=256
 set encoding=utf-8
 
-:let g:airline_theme='dark'
+:let g:airline_theme='powerlineish'
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ''
@@ -68,7 +70,6 @@ let g:airline_detect_modified=1
 let g:airline_detect_paste=1
 let g:airline_detect_iminsert=0
 
-let g:molokai_original = 1
 let g:rehash256 = 1
 
 " CtrlP

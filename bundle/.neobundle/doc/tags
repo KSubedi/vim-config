@@ -703,7 +703,6 @@ neocomplete-filter-attribute-filter	neocomplete.txt	/*neocomplete-filter-attribu
 neocomplete-filter-attribute-name	neocomplete.txt	/*neocomplete-filter-attribute-name*
 neocomplete-filter-attributes	neocomplete.txt	/*neocomplete-filter-attributes*
 neocomplete-filter-converter_abbr	neocomplete.txt	/*neocomplete-filter-converter_abbr*
-neocomplete-filter-converter_case	neocomplete.txt	/*neocomplete-filter-converter_case*
 neocomplete-filter-converter_default	neocomplete.txt	/*neocomplete-filter-converter_default*
 neocomplete-filter-converter_delimiter	neocomplete.txt	/*neocomplete-filter-converter_delimiter*
 neocomplete-filter-converter_disable_abbr	neocomplete.txt	/*neocomplete-filter-converter_disable_abbr*
