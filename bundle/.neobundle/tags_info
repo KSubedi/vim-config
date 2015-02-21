@@ -2,6 +2,8 @@ ctrlp.vim
 emmet-vim
 neobundle.vim
 neocomplete.vim
+neosnippet-snippets
+neosnippet.vim
 nerdtree
 syntastic
 tabular
@@ -11,4 +13,5 @@ vim-autoformat
 vim-css-color
 vim-go
 vim-jade
+vim-jsx
 vim-nodejs-complete

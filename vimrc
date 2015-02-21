@@ -1,8 +1,7 @@
 set nu
 syntax on
 set background=dark
-colorscheme solarized 
-let g:solarized_termcolors=256
+colorscheme grb256
 set noet ci pi sts=0 sw=4 ts=4
 
 "Autocomplete
@@ -39,6 +38,9 @@ NeoBundle 'Chiel92/vim-autoformat'
 NeoBundle 'ahayman/vim-nodejs-complete'
 NeoBundle 'digitaltoad/vim-jade'
 NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'mxw/vim-jsx'
+NeoBundle 'Shougo/neosnippet.vim'
+NeoBundle 'Shougo/neosnippet-snippets'
 
 call neobundle#end()
 
@@ -59,13 +61,13 @@ set encoding=utf-8
 :let g:airline_theme='powerlineish'
 
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#left_sep = ''
+let g:airline#extensions#tabline#left_sep = ''
 let g:airline#extensions#tabline#left_alt_sep = ' '
 
 let g:airline_enable_syntastic  = 1
 
-let g:airline_left_sep = ''
-let g:airline_right_sep = ''
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
 let g:airline_detect_modified=1
 let g:airline_detect_paste=1
 let g:airline_detect_iminsert=0
@@ -156,4 +158,27 @@ let g:neocomplete#sources#omni#input_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\
 "Vim Go
 let g:go_fmt_command = "goimports"
 let g:go_snippet_engine = "neosnippet"
+
+"JSX
+let g:jsx_ext_required = 0
+" Plugin key-mappings.
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-k>     <Plug>(neosnippet_expand_target)
+
+" SuperTab like snippets behavior.
+imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+\ "\<Plug>(neosnippet_expand_or_jump)"
+\: pumvisible() ? "\<C-n>" : "\<TAB>"
+smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+\ "\<Plug>(neosnippet_expand_or_jump)"
+\: "\<TAB>"
+
+" For snippet_complete marker.
+if has('conceal')
+  set conceallevel=2 concealcursor=i
+endif
+
+" Tell Neosnippet about the other snippets
+let g:neosnippet#snippets_directory='~/.vim/snippets'
 
