@@ -1,11 +1,8 @@
 ctrlp.vim
-emmet-vim
 neobundle.vim
 neocomplete.vim
 nerdtree
-tcomment_vim
+syntastic
 vim-airline
 vim-autoformat
-vim-css-color
 vim-go
-vim-jade

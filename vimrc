@@ -28,13 +28,10 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'fatih/vim-go'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'kien/ctrlp.vim'
-NeoBundle 'tomtom/tcomment_vim'
-NeoBundle 'mattn/emmet-vim'
 NeoBundle 'Shougo/neocomplete.vim'
-NeoBundle 'ap/vim-css-color'
 NeoBundle 'Chiel92/vim-autoformat'
-NeoBundle 'digitaltoad/vim-jade'
 NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'scrooloose/syntastic'
 
 call neobundle#end()
 
@@ -150,11 +147,13 @@ let g:neocomplete#sources#omni#input_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\
 "Vim Go
 let g:go_fmt_command = "goimports"
 
-" SuperTab like snippets behavior.
-imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-\ "\<Plug>(neosnippet_expand_or_jump)"
-\: pumvisible() ? "\<C-n>" : "\<TAB>"
-smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-\ "\<Plug>(neosnippet_expand_or_jump)"
-\: "\<TAB>"
+" Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
