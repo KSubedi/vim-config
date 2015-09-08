@@ -35,7 +35,6 @@ NeoBundle 'ap/vim-css-color'
 NeoBundle 'Chiel92/vim-autoformat'
 NeoBundle 'digitaltoad/vim-jade'
 NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'Shougo/neosnippet.vim'
 
 call neobundle#end()
 
@@ -150,7 +149,6 @@ let g:neocomplete#sources#omni#input_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\
 
 "Vim Go
 let g:go_fmt_command = "goimports"
-let g:go_snippet_engine = "neosnippet"
 
 " SuperTab like snippets behavior.
 imap <expr><TAB> neosnippet#expandable_or_jumpable() ?

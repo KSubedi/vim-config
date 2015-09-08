@@ -2,7 +2,6 @@ ctrlp.vim
 emmet-vim
 neobundle.vim
 neocomplete.vim
-neosnippet.vim
 nerdtree
 tcomment_vim
 vim-airline
