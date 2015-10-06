@@ -1,6 +1,8 @@
 set nu
 syntax on
 set background=dark
+set autoindent
+set cindent
 colorscheme grb256
 set noet ci pi sts=0 sw=4 ts=4
 
@@ -156,4 +158,10 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
 
