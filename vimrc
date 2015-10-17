@@ -3,8 +3,10 @@ syntax on
 set background=dark
 set autoindent
 set cindent
-colorscheme grb256
+colorscheme blackboard
 set noet ci pi sts=0 sw=4 ts=4
+set backspace=indent,eol,start
+
 
 "Autocomplete
 " Note: Skip initialization for vim-tiny or vim-small.
@@ -34,6 +36,7 @@ NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'Chiel92/vim-autoformat'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'scrooloose/syntastic'
+NeoBundle 'mattn/emmet-vim'
 
 call neobundle#end()
 
@@ -68,7 +71,7 @@ let g:rehash256 = 1
 " CtrlP
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
-"let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 let g:ctrlp_match_window_bottom = 0
 let g:ctrlp_match_window_reversed = 0
 let g:ctrlp_working_path_mode = 'ra' 
@@ -150,10 +153,7 @@ let g:neocomplete#sources#omni#input_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\
 let g:go_fmt_command = "goimports"
 
 " Syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
+let g:syntastic_html_checkers=['']
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
@@ -165,3 +165,7 @@ let g:go_highlight_structs = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 
+" Emmet
+
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
