@@ -7,6 +7,8 @@ colorscheme blackboard
 set noet ci pi sts=0 sw=4 ts=4
 set backspace=indent,eol,start
 
+:set wildmenu
+:set wildmode=full
 
 "Autocomplete
 " Note: Skip initialization for vim-tiny or vim-small.
@@ -29,7 +31,6 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " My Bundles here:
 " Refer to |:NeoBundle-examples|.
 " Note: You don't set neobundle setting in .gvimrc!
-NeoBundle 'fatih/vim-go'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'Shougo/neocomplete.vim'
@@ -37,6 +38,7 @@ NeoBundle 'Chiel92/vim-autoformat'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'mattn/emmet-vim'
+NeoBundle 'mustache/vim-mustache-handlebars'
 
 call neobundle#end()
 
@@ -53,8 +55,6 @@ let g:bufferline_echo = 0
 set noshowmode
 set t_Co=256
 set encoding=utf-8
-
-:let g:airline_theme='powerlineish'
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ''
@@ -80,9 +80,6 @@ let g:ctrlp_dotfiles = 0
 let g:ctrlp_switch_buffer = 0
 let g:ctrlp_max_files=0
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist|git|ext|build|vendor|lib)|(\.(swp|ico|git|svn))$'
-
-""Vim emmet zencoding
-let g:user_emmet_leader_key='<c-z>'
 
 "Autocomplete
 "Note: This option must set it in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
@@ -149,9 +146,6 @@ let g:neocomplete#sources#omni#input_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
 let g:neocomplete#sources#omni#input_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
 let g:neocomplete#sources#omni#input_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
 
-"Vim Go
-let g:go_fmt_command = "goimports"
-
 " Syntastic
 let g:syntastic_html_checkers=['']
 let g:syntastic_always_populate_loc_list = 1
@@ -166,6 +160,4 @@ let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 
 " Emmet
-
-let g:user_emmet_install_global = 0
-autocmd FileType html,css EmmetInstall
+let g:user_emmet_leader_key='<C-E>'

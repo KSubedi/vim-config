@@ -6,4 +6,4 @@ nerdtree
 syntastic
 vim-airline
 vim-autoformat
-vim-go
+vim-mustache-handlebars

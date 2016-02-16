@@ -1,4 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =3
 let g:netrw_dirhist_1='/Users/kaushal/.vim'
 let g:netrw_dirhist_2='/Users/kaushal/Workspace/Docker/iscene-stack/iscene/files/app'
+let g:netrw_dirhist_3='/home/kaushal/workspace/node/lumle/frontend/lumle/app/styles'
